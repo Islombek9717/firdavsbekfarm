@@ -375,6 +375,11 @@ footer {
   justify-content: space-between;
 }
 
+footer img {
+  width: 300px;
+  height: 200px;
+}
+
 footer .col {
   display: flex;
   flex-direction: column;
@@ -424,6 +429,9 @@ footer a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
 }
 
 footer .copyright p {
@@ -509,6 +517,14 @@ footer .copyright p {
     display: flex;
     width: 70%;
   }
+  footer img {
+    margin: 0 auto;
+  }
+  footer .col {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 477px) {
@@ -551,6 +567,10 @@ footer .copyright p {
 
   #newsletter .form {
     width: 100%;
+  }
+
+  footer img {
+    margin: 0 auto;
   }
 
   footer .col {
