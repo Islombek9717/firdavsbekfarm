@@ -585,6 +585,52 @@ footer .copyright p {
   background-color: #088178;
 }
 
+/* about page */
+
+#page-header.about-header {
+  background-image: url("img/aboutback.jpg");
+}
+
+marquee {
+  display: flex;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+}
+
+#about-head img {
+  width: 50%;
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+}
+
+#about-app {
+  text-align: center;
+}
+
+#about-app .img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+  flex-wrap: wrap;
+}
+
+#about-app img {
+  width: 48%;
+  height: 100%;
+  margin-top: 30px;
+}
+
 /* media query */
 
 @media (max-width: 799px) {
