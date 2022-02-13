@@ -1,0 +1,210 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firdavsbek Farm Savdo service</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section id="header">
+        <a class="logo" href="#">
+            Firdavsbek<span class="logoName">Farm</span>
+        </a>
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="shop.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="blog.html">Блог</a>
+                </li>
+                <li>
+                    <a href="about.html">О нас</a>
+                </li>
+                <li>
+                    <a href="contact.html">Контакт</a>
+                </li>
+                <li>
+                    <a class="active" id="lg-bag" href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>Контакт</h2>
+        <p>Оставьте сообщение, мы рады услышать от вас!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Удалить</td>
+                    <td>Изображение</td>
+                    <td>Продукт</td>
+                    <td>Цена</td>
+                    <td>Количество</td>
+                    <td>Итого</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/probirka1.jpg" alt=""></td>
+                    <td>Эппендорф Тюбик 1.5мл</td>
+                    <td>300 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/newProbirka2.jpg" alt=""></td>
+                    <td>Пробирка 15мг</td>
+                    <td>300 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/pipetteYellow.jpg" alt=""></td>
+                    <td>Наконечник для дозатора 200мкл</td>
+                    <td>100 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/pipettetips.jpg" alt=""></td>
+                    <td>Наконечник для дозатора 200мкл</td>
+                    <td>100 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/bluepipette1.jpg" alt=""></td>
+                    <td>Наконечник для дозатора 1000мкл</td>
+                    <td>100 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/kolpachki1.jpg" alt=""></td>
+                    <td>Алюминиевые колпачки д-20</td>
+                    <td>100 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/kolpacki.jpg" alt=""></td>
+                    <td>Колпачки Flipp Off д-20</td>
+                    <td>100 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/kolpacki4.jpg" alt=""></td>
+                    <td>Алюминиевые колпачки д-34</td>
+                    <td>120 UZS</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Применить купон</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Отправить купон</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Всего в корзине</h3>
+            <table>
+                <tr>
+                    <td>Итоги</td>
+                    <td>100 UZS</td>
+                </tr>
+                <tr>
+                    <td>Доставка</td>
+                    <td>Бесплатно</td>
+                </tr>
+                <tr>
+                    <td><strong>Итоги</strong></td>
+                    <td><strong>100 UZS</strong></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <img src="img/logo-removebg.png" alt="">
+        <div class="col">
+            <h4>Контакт</h4>
+            <p><strong>Адрес:</strong> 5 массив Намуна, улица Гурмирон, Косонсойский район, Наманганская область,
+                Узбекистан
+            </p>
+            <p><strong>Телефон:</strong><a href="tel:+998995140001"> +99899 514 00 01</a></p>
+            <p><strong>Рабочее время
+                    :</strong> 08:00-18:00, Пн - Сб</p>
+            <p><strong>Адрес электронной почты: </strong><a href="mailto:firdavsbekfarmsavdoservis@mail.ru">
+                    firdavsbekfarmsavdoservis@mail.ru</a></p>
+            <div class="follow">
+                <h4>Подписывайтесь на нас</h4>
+                <div class="icon">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100075459835231&__cft__[0]=AZVs_rjADkUv1CHfeKqPTNeazxd4qNf3asVVTsNCajjTq1dxY7Pc6OLnPRckusr0RBwXmRhS1EIrUWr3zMl1cLLtWIdk3lhfhuarGOr3f8tP5uhEZBJi84ZzHt4qof2dJpk&__tn__=-UC%2CP-R">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/azizbek7777n/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>О компании</h4>
+            <a href="#">О нас</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия</a>
+            <a href="#">Связаться с нами</a>
+        </div>
+        <div class="col">
+            <h4>Мой аккаунт</h4>
+            <a class="active" href="index.html">Главная</a>
+            <a href="shop.html">Магазин</a>
+            <a href="blog.html">Блог</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакт</a>
+
+        </div>
+        <div class="copyright">
+            <p>© 2022, Firdavsbek Farm Savdo Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
