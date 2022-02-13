@@ -45,17 +45,21 @@ button.normal {
   font-weight: 600;
   padding: 15px 30px;
   background: transparent;
-  color: green;
+  color: #088178;
   border-radius: 10px;
-  border: 1px solid green;
+  border: 1px solid #088178;
   transition: all 0.3s;
   cursor: pointer;
   outline: none;
 }
 
 .normal:hover {
-  background: green;
+  background: #088178;
   color: white;
+}
+
+.normal:active {
+  transform: scale(0.94);
 }
 
 body {
@@ -157,8 +161,13 @@ body {
   color: green;
 }
 
-#hero button:active {
-  transform: scale(0.94);
+#hero button a {
+  text-decoration: none;
+  color: #088178;
+}
+
+#hero button:hover a {
+  color: #fff;
 }
 
 #feature {
@@ -362,8 +371,6 @@ body {
 }
 
 #newsletter button {
-  background-color: #088178;
-  color: #fff;
   white-space: nowrap;
   padding: 8px 15px;
   border-top-left-radius: 0;
@@ -511,11 +518,6 @@ footer .copyright p {
 
 #prodetails .single-pro-details input:focus {
   outline: none;
-}
-
-#prodetails .single-pro-details button {
-  color: #ffffff;
-  background-color: #088178;
 }
 
 #prodetails .single-pro-details span {
@@ -708,11 +710,6 @@ marquee {
   border: 1px solid #e1e1e1;
 }
 
-#form-details form button {
-  background-color: #088178;
-  color: #ffffff;
-}
-
 #form-details .people div {
   padding-bottom: 25px;
   display: flex;
@@ -741,6 +738,10 @@ marquee {
 }
 
 /* cart page */
+
+#cart {
+  overflow-x: auto;
+}
 
 #cart table {
   width: 100%;
@@ -798,6 +799,60 @@ marquee {
 }
 
 #cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon div {
+  display: flex;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
   font-size: 13px;
 }
 
@@ -907,6 +962,16 @@ marquee {
 
   #form-details form {
     width: 50%;
+  }
+
+  /* cart page */
+
+  #coupon div {
+    display: block;
+  }
+  #coupon div input {
+    width: 90%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1037,5 +1102,19 @@ marquee {
   #form-details form {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  /*cart page */
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #coupon {
+    width: 100%;
+  }
+
+  #subtotal {
+    width: 100%;
+    padding: 20px;
   }
 }
